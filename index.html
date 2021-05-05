@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
       <p class="w3-large">The next part involved making an entirely new sheet with a line for each team. Each team would have spi1 and sppi2 value, proj_score1 and proj_score2 value, score1 and score2 value. It would also include a count for first column and second columns, we need this for averages. From my pruned data set I will then sift through and collect data for each column associated with each team.</p>
   </div>
     
-      <img src="/TableLayout.png" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+      <center><img src="/TableLayout.png" class="w3-round w3-image w3-opacity-min" width="600" height="750"></center>
 
     <div>
       <p class="w3-large">The breakdowns of what each item stands for is shown below, as stated before the reason there are two of each column is for home and away games. We will consolidate this eventually as we have no need to test home versus away for the questions.</p>
@@ -79,8 +79,16 @@ h1, h2, h3, h4, h5, h6 {
       <p class="w3-large"><b>Count (count1/count2):</b> This is simply the number of times the team appeared in the data sets. count1 corresponds to the time a team appears in team1 and therefore relates to spi1, proj_score1 and score1 while count2 corresponds to how many times a team appears in team2 and therefore relates to spi2, proj_score2 and score2. An important test you can do here to insure you have correctly counted your data is that each for each team count1 plus count2 will give you a total count, then divide that by 38. Your remainder should be zero, this is because there are 38 games per season in the Premier League. If you get a number that isn't whole, there may be a mistake in your data. ((count1 + count2)%38)=0</p>
   </div>
     
-    
-    
+    <div class="w3-row w3-padding-large"> 
+      <p class="w3-large"> This next portion shows where in the filter options we simply chose team1 or team2 and then filtered by name to organize each teams stats. I'ts important to note when doing all the secondary attributes (spi2, proj_score2, score2) that you will need to carefully select each data point as its no longer in continuous order in the spreadsheet.</p>
+  </div>
+
+    <center><img src="/TeamOneFilter.png" class="w3-round w3-image w3-opacity-min" width="600" height="750"><img src="/TeamTwoFilter.png" class="w3-round w3-image w3-opacity-min" width="600" height="750"></center>
+
+    <div class="w3-row w3-padding-large"> 
+      <p class="w3-large"> After doing all of this, below is what my compiled data for both sides should look like. Now I can finally combine the data into what I will use to answer my questions!</p>
+  </div>
+  <center><img src="/FinalPrune.png" class="w3-round w3-image w3-opacity-min" width="600" height="750"></center>
     </div>
   </div>
 </div>
